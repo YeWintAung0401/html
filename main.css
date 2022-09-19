@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-image: url(./6.jpeg);
+    background-position: 0 80px;
+    background-size: auto;
+    background-position-x: center;
+}
+nav {
+    width: 100%;
+    height: 80px;
+    background: rgb(50, 32, 125);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.logo {
+    width: 60;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgb(0, 0, 0);
+    transition: 0.7s;
+}
+.logo:hover {
+    /* transform: rotate(360deg) scale(1.2); */
+    transform: scale(1.2);
+    transform: 2s;
+}
+.nav_links a {
+    background: rgb(41, 41, 41);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 18px;
+    transition: 1.5s;
+}
+.nav_links a:hover {
+    background: rgb(0, 0, 0);
+}
+.social_links i {
+    font-size: 30px;
+    margin: 0 15px;
+    color: rgb(29, 29, 29);
+}
+.fa-github:hover {
+    color: white !important;
+    transform: scale(1.2);
+}
+.fa-facebook:hover {
+    color: rgb(35, 116, 225) !important;
+    transform: scale(1.2);
+}
+.fa-twitter:hover {
+    color: rgb(11, 155, 200) !important;
+    transform: scale(1.2);
+}
+.fa-youtube:hover {
+    color: rgb(255, 0, 0) !important;
+    transform: scale(1.2);
+}
+.fa-instagram:hover {
+    color: rgb(255, 0, 106);
+    transform: scale(1.2);
+}
+#bars {
+    background: blue;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+.help {
+    background-color: rgb(50, 32, 125);
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+.helpbar a {
+    background: rgb(41, 41, 41);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 18px;
+    transition: 1.5s;
+    
+}
+.helpbar a:hover {
+    background: rgb(0, 0, 0);
+}
+form {
+    width: 480px;
+    height: 450px;
+    margin: 10px auto;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.11);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.342), inset 0 0 10px rgba(255, 255, 255, 0.219);
+    backdrop-filter: blur(3px);
+    border-radius: 42px; 
+}
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(0, 0, 0);
+}
+label,
+input {
+    display: block;
+    width: 100%;
+}
+label {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+input {
+    padding: 13px 25px;
+    margin-bottom: 20px;
+    background: rgba(160, 134, 255, 0.404);
+    border: none;
+    border: 3px;
+    font-size: 1.2em;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.411), inset 0 0 4px rgba(255, 255, 255, 0.555);
+}
+input::placeholder {
+    color: rgb(0, 0, 0);
+}
+input[type='submit'] {
+    font-size: 1.5em;
+    background: rgba(25, 22, 201, 0.555);
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+}
